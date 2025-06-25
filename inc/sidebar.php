@@ -69,8 +69,13 @@
                     </div>
                       <span>User</span>
                     </div>
-                    
                   </a>
                 </li>
+                <li class="sidebar-item">
+      <a class="sidebar-link" href="?page=report" aria-expanded="false">
+        <i class="ti ti-circle"></i>
+        <span>Report</span>
+      </a>
+    </li>
 
         </nav>

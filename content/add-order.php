@@ -49,7 +49,7 @@
         $update = mysqli_query($config, "UPDATE trans_order SET order_status='$order_status', order_pay='$order_pay', order_change='$order_change', total='$total' WHERE id='$id_order'");
         if ($update) {
             mysqli_query($config, "INSERT INTO trans_laundry_pickup (id_order, id_customer, pickup_date) VALUES ('$id_order', '$id_customer', '$pickup_date')");
-            header("location:?page=tambah-order&detail=" . $id_order . "&status-pickup");
+            header("location:?page=add-order&detail=" . $id_order . "&status-pickup");
         }
     }
 
